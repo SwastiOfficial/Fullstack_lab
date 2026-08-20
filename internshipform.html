@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Application Form</title>
+</head>
+
+<style>
+   body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(3, 84, 63);
+    margin:0px;
+    padding:40px;
+   }
+   h1{
+    text-align: center;
+    color: rgb(121, 232, 138);
+   }
+   form{
+    background-color: rgb(208, 234, 224);
+    width: 500px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px gray;
+   }
+   label{
+    display:inline-block;
+    margin-bottom: 8px;
+   }
+   input{
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   }
+   button{
+    padding: 10px 25px;
+    background-color: rgb(21, 35, 238);
+    color: white;
+    border: none;
+    border-radius: 4px;
+   }
+
+</style>
+ 
+<body>
+
+    <h1>Student Registration Form</h1>
+    <br>
+    
+    <form action = "/register" method = "post">
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" placeholder="enter name">
+    <br>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" placeholder="enter email">
+    <br>
+    <label for="Phone">Phone Number:</label>
+    <input type="tel" id="Phone" name="Phone Number" placeholder="enter number">
+    <br>
+    <label for="DOB">DOB:</label>
+    <input type="date" id="DOB" name="DOB">
+    <br>
+    <label for="password">password:</label>
+    <input type="password" id="password" name="password" placeholder="enter password">
+    <br>
+    <label for="gender"> Gender: </label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male"> male </label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female"> female </label>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other"> Other </label>
+    <br>
+    <label for="branch">branch:</label>
+    <select name="" id="">
+        <option value="CSE" id="">CSE</option>
+        <option value="IT" id="">IT</option>
+        <option value="Mechanical" id="">Mechanical</option>
+    </select>
+    <br>
+    <label> Skills :</label>
+        <input type="checkbox" id="java" value="java">
+        <label for="java"> java </label>
+        <input type="checkbox" id="JavaScript" value="JavaScript">
+        <label for="JavaScript"> JavaScript </label>
+        <input type="checkbox" id="HTML" value="HTML">
+        <label for="HTML"> HTML </label>
+        <input type="checkbox" id="CSS" value="CSS">
+        <label for="CSS"> CSS </label>
+        <input type="checkbox" id="React" value="React">
+        <label for="React"> React </label>
+     <br>
+     <label for="internshipPreference"> Internship Preference: </label>
+      <input type="radio" id="WFH" name="internshipPreference" value="WFH">
+      <label for="WFH"> Work From Home </label>
+      <input type="radio" id="Onsite" name="internshipPreference" value="Onsite">
+      <label for="Onsite"> Onsite </label>
+    <br>
+    <label for="resume">Upload Resume</label>
+    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+    <br>
+    <button type="Submit"> Upload Resume </button>
+    <br>
+    <label for="coverletter">Cover Letter</label>
+    <input type="coberletter" id="coverletter" rows="10" cols="50" placeholder="write your coverletter here..">
+    <br>
+    <button type="Submit"> Submit </button> <button type="Reset"> Reset </button>
+    <br>
+    
+     </form>
+     <br>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13497.939006337374!2d76.30528445785555!3d32.245037280691236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b56d4e3d36d19%3A0xa3e8725f0584be76!2sMcLeod%20Ganj%2C%20Dharamshala%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1787140079158!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</body>
+</html>
