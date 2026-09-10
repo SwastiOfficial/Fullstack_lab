@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    nav{
+      background-color:black;
+       height: 200px;
+        width: 200px;
+        position: sticky;
+    }
+    .box{
+            background-color:rgb(142,289,209);
+            height: 200px;
+            width: 200px;
+            margin: 30px;
+            position: relative;
+
+        }
+        #box-1{
+            position: sticky;
+            top: 0;
+            background-color: coral;
+            z-index: 1; 
+        }
+        #box-2{
+            position: relative;
+            right: 0px;
+        }
+        #box-3{
+            position:absolute;
+            top:50;
+        }
+</style>
+<body>
+  <div>
+<nav>DevConnect</nav>
+<div class="parent">
+<div id="box-1" class="box"> I am static </div>
+<div id="box-2" class="box"> I am relative </div>
+<div id="box-3" class="box"> I am absolute </div>
+
+
+</body>
+</html>
